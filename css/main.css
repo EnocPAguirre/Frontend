@@ -1,0 +1,133 @@
+body {
+  background-color: darkgrey;
+}
+
+.row {
+  padding-top: 15px;
+  background-color: white;
+}
+
+section {
+  margin-left: 13%;
+  margin-right: 13%;
+  background-color: white;
+}
+
+.card1 img {
+  width: 100%;
+  height: 400px;
+}
+
+.card2 {
+  height: 400px;
+  background-color: #0F75BC;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card2 h1 {
+  margin-left: 15px;
+  text-decoration: underline;
+  margin-top: 0;
+  padding: 0;
+}
+
+.card2 p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  text-justify: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.card-3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-3 h1 {
+  margin-top: 40px;
+  margin-left: 15px;
+  text-decoration: underline;
+}
+
+.card-3 p {
+  margin-top: 10px;
+  text-align: justify;
+  text-justify: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.derecha {
+  float: right;
+}
+
+.contenedor-img {
+  position: relative;
+}
+
+.contenedor-img img {
+  width: 350px;
+  height: 350px;
+}
+
+.centrar {
+  opacity: 0.7;
+  position: absolute;
+  bottom: 15%;
+  background-color: #0F75BC;
+  width: 100%;
+  height: 300px;
+}
+
+.text-center {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width:600px) {
+  .card1 {
+    float: left;
+    width: 50%;
+  }
+  .card2 {
+    margin-left: 50%;
+  }
+  .contenedor-img img {
+    width: 100%;
+    height: 450px;
+  }
+  .columnas {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width:599px) {
+  .card1 {
+    display: inline;
+  }
+  .contenedor-img img {
+    width: 100%;
+  }
+  .columnas {
+    column-count: 1;
+  }
+  .centrar {
+    height: 200px;
+  }
+  section {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  body {
+    background-color: white;
+  }
+  .row {
+    padding-top: 0px;
+  }
+}
